@@ -1,0 +1,37 @@
+
+
+.logo{
+    position: absolute;
+    font-size: 1rem;
+    transform: translate(-50%,-50%)scale(2.5);
+}
+
+
+.heading_style01{
+    position: relative;
+    left: 150px;
+    bottom:70px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading_style01 h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 0.8px black;
+}
+
+.heading_style01 h1:nth-child(2){
+
+    color: black;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%
+    {
+        clip-path: polygon(0% 45%,15% 44%,32% 50%,54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,0% 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0% 60%,16% 65%,34% 66%,51% 62%,67% 50%,84% 45%,100% 46%,100% 100%,0% 100%);
+    }
+}
